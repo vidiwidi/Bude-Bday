@@ -3,24 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selamat Ulang Tahun Kak!</title>
+  <title>Spesial Buat Bude Ninas! ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div id="landing-page" class="container">
-    <h2>Ada kejutan buat Bude Ninas! 🎁</h2>
-    <p>Coba klik fotonya deh:</p>
-    <img id="photo-btn" src="foto-kakak.jpg" alt="Foto Kakak" class="wiggle-photo">
-  </div>
+  <!-- Halaman Utama -->
+  <main id="landing-page" class="card">
+    <span class="badge">Special Day 🎁</span>
+    <h1>Ada kejutan buat Bude Ninas!</h1>
+    <p class="subtitle">Coba klik fotonya deh ✨</p>
+    
+    <div class="photo-wrapper">
+      <img id="photo-btn" src="foto-kakak.jpg" alt="Foto Bude Ninas" class="wiggle-photo">
+    </div>
+  </main>
 
-  <div id="greeting-page" class="container hidden">
-    <h1>🎉 Selamat Ulang Tahun, Kak! 🎂</h1>
-    <p>Semoga panjang umur, sehat selalu, dan semua impiannya tercapai!</p>
-    <button onclick="location.reload()">Putar Lagi 🔄</button>
-  </div>
+  <!-- Halaman Ucapan -->
+  <main id="greeting-page" class="card hidden">
+    <span class="badge">Happy Birthday! 🎉</span>
+    <h1>Selamat Ulang Tahun, Bude Ninas! 🎂</h1>
+    <p class="greeting-text">Semoga panjang umur, sehat selalu, makin murah rezeki, dan bahagia terus setiap hari! ✨💖</p>
+    <button class="btn-primary" onclick="location.reload()">Putar Lagi 🔄</button>
+  </main>
 
   <script src="app.js"></script>
 </body>
 </html>
-
